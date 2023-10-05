@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.Abstractions", "TcpRouter.Abstractions\TcpRouter.Abstractions.csproj", "{0C46F373-9595-4B2F-81F8-05BBDF681757}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.RouteManager", "TcpRouter.RouteManager\TcpRouter.RouteManager.csproj", "{CDECDD35-C945-4017-AD4D-69DF0C4AAEDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.Detector", "TcpRouter.Detector\TcpRouter.Detector.csproj", "{FA606671-4936-4BCF-BE33-5A5A11E31B69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRotuer.Router", "TcpRotuer.Router\TcpRotuer.Router.csproj", "{ECFDD09D-C2FD-48F1-AA27-ADA53E739F42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.Api", "TcpRouter.Api\TcpRouter.Api.csproj", "{1846EFBC-90FF-42A2-9B45-9818E3E16FCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpRouter.Abstractions.Tests", "TcpRouter.Abstractions.Tests\TcpRouter.Abstractions.Tests.csproj", "{81EAC1F7-F161-4E3A-B3D6-312ECBD81CE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C46F373-9595-4B2F-81F8-05BBDF681757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C46F373-9595-4B2F-81F8-05BBDF681757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C46F373-9595-4B2F-81F8-05BBDF681757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C46F373-9595-4B2F-81F8-05BBDF681757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDECDD35-C945-4017-AD4D-69DF0C4AAEDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDECDD35-C945-4017-AD4D-69DF0C4AAEDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDECDD35-C945-4017-AD4D-69DF0C4AAEDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDECDD35-C945-4017-AD4D-69DF0C4AAEDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA606671-4936-4BCF-BE33-5A5A11E31B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA606671-4936-4BCF-BE33-5A5A11E31B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA606671-4936-4BCF-BE33-5A5A11E31B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA606671-4936-4BCF-BE33-5A5A11E31B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECFDD09D-C2FD-48F1-AA27-ADA53E739F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECFDD09D-C2FD-48F1-AA27-ADA53E739F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECFDD09D-C2FD-48F1-AA27-ADA53E739F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECFDD09D-C2FD-48F1-AA27-ADA53E739F42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1846EFBC-90FF-42A2-9B45-9818E3E16FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1846EFBC-90FF-42A2-9B45-9818E3E16FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1846EFBC-90FF-42A2-9B45-9818E3E16FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1846EFBC-90FF-42A2-9B45-9818E3E16FCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EAC1F7-F161-4E3A-B3D6-312ECBD81CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EAC1F7-F161-4E3A-B3D6-312ECBD81CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EAC1F7-F161-4E3A-B3D6-312ECBD81CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EAC1F7-F161-4E3A-B3D6-312ECBD81CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48B3B46C-1D14-4173-BAF1-D07FB88CA2FA}
+	EndGlobalSection
+EndGlobal
