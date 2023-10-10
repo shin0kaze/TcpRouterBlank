@@ -11,11 +11,11 @@ namespace TcpRouter.Abstractions
   /// </summary>
   public class RouteWithStatus
   {
-    public RouteWithStatus(Route route, bool isDeviceConnected, bool isRouterConnectedToDAS)
+    public RouteWithStatus(Route route, bool isDeviceConnected, bool isRouterConnectedToSSD)
     {
       Route = route;
       IsDeviceConnected = isDeviceConnected;
-      IsRouterConnectedToDAS = isRouterConnectedToDAS;
+      IsRouterConnectedToSSD = isRouterConnectedToSSD;
     }
 
     /// <summary>
@@ -31,6 +31,6 @@ namespace TcpRouter.Abstractions
     /// <summary>
     /// Поключен ли маршрут к системе сбора данных?
     /// </summary>
-    public bool IsRouterConnectedToDAS { get; }
+    public bool IsRouterConnectedToSSD { get; }
   }
 }
