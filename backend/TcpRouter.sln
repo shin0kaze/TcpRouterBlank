@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRotuer.Router", "TcpRotu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.Api", "TcpRouter.Api\TcpRouter.Api.csproj", "{1846EFBC-90FF-42A2-9B45-9818E3E16FCD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.Abstractions.Tests", "TcpRouter.Abstractions.Tests\TcpRouter.Abstractions.Tests.csproj", "{81EAC1F7-F161-4E3A-B3D6-312ECBD81CE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.Abstractions.Tests", "Tests\TcpRouter.Abstractions.Tests\TcpRouter.Abstractions.Tests.csproj", "{81EAC1F7-F161-4E3A-B3D6-312ECBD81CE6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.FakeDetector", "Utils\TcpRouter.FakeDetector\TcpRouter.FakeDetector.csproj", "{F5A6B387-6C47-452C-942B-0E2D67E45B8D}"
 EndProject
@@ -29,7 +29,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Readme.md = Readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpRouter.FakeMeter.Console", "Utils\TcpRouter.FakeMeter.Console\TcpRouter.FakeMeter.Console.csproj", "{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.FakeMeter.Console", "Utils\TcpRouter.FakeMeter.Console\TcpRouter.FakeMeter.Console.csproj", "{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpRouter.RouteManager.Tests", "Tests\TcpRouter.RouteManager.Tests\TcpRouter.RouteManager.Tests.csproj", "{BAE6E828-1F06-4E29-82DE-208C72168F4F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{8F491630-FAE6-4B0E-AC9D-95EEA18C80B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,15 +81,21 @@ Global
 		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE6E828-1F06-4E29-82DE-208C72168F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE6E828-1F06-4E29-82DE-208C72168F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE6E828-1F06-4E29-82DE-208C72168F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE6E828-1F06-4E29-82DE-208C72168F4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{81EAC1F7-F161-4E3A-B3D6-312ECBD81CE6} = {8F491630-FAE6-4B0E-AC9D-95EEA18C80B6}
 		{F5A6B387-6C47-452C-942B-0E2D67E45B8D} = {73DC5B30-5EB1-4C9C-A912-6EBEFC220939}
 		{37A0DF47-64C4-4CFB-8B6D-74D5BCA0DFAD} = {73DC5B30-5EB1-4C9C-A912-6EBEFC220939}
 		{A87D155F-C89E-4E08-8F65-191E5F504845} = {73DC5B30-5EB1-4C9C-A912-6EBEFC220939}
 		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC} = {73DC5B30-5EB1-4C9C-A912-6EBEFC220939}
+		{BAE6E828-1F06-4E29-82DE-208C72168F4F} = {8F491630-FAE6-4B0E-AC9D-95EEA18C80B6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48B3B46C-1D14-4173-BAF1-D07FB88CA2FA}
