@@ -45,9 +45,23 @@ namespace TcpRouter.FakeMeterConscole
         using var _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
         var endPount = new IPEndPoint(ip, port);
-        Log($"Connecting to {ip}:{port}");
-        _socket.Connect(endPount);
-        Log("Connected");
+        bool isConnected = false;
+
+        while (!isConnected)
+        {
+          try
+          {
+            Log($"Connecting to {ip}:{port}");
+            _socket.Connect(endPount);
+            isConnected = true;
+            Log("Connected!");
+          }
+          catch
+          {
+            Log("Fail. I wait 5 seconds and try again");
+            Thread.Sleep(5000);
+          }
+        }
 
         var buffer = new byte[100];
         var received = Receive(_socket, buffer);
