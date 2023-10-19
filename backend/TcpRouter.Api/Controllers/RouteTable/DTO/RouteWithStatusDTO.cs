@@ -1,4 +1,4 @@
-﻿namespace TcpRouter.Api.Controllers.RouteTable.DTO
+namespace TcpRouter.Api.Controllers.RouteTable.DTO
 {
   /// <summary>
   /// Data Transport Object для маршрута со статусами подключения
@@ -13,6 +13,6 @@
     /// <summary>
     /// Поключен ли маршрут к системе сбора данных?
     /// </summary>
-    public bool IsRouterConnectedToSSD { get; set;  }
+    public bool IsRouterConnectedToSSD { get; set; }
   }
 }

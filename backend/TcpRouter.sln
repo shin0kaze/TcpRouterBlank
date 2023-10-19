@@ -25,8 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TcpRouter.FakeDetector.Cons
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{71D32D2A-57C6-430C-B30A-57B9C15CC744}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		Readme.md = Readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TcpRouter.FakeMeter.Console", "Utils\TcpRouter.FakeMeter.Console\TcpRouter.FakeMeter.Console.csproj", "{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +73,10 @@ Global
 		{A87D155F-C89E-4E08-8F65-191E5F504845}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A87D155F-C89E-4E08-8F65-191E5F504845}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A87D155F-C89E-4E08-8F65-191E5F504845}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +85,7 @@ Global
 		{F5A6B387-6C47-452C-942B-0E2D67E45B8D} = {73DC5B30-5EB1-4C9C-A912-6EBEFC220939}
 		{37A0DF47-64C4-4CFB-8B6D-74D5BCA0DFAD} = {73DC5B30-5EB1-4C9C-A912-6EBEFC220939}
 		{A87D155F-C89E-4E08-8F65-191E5F504845} = {73DC5B30-5EB1-4C9C-A912-6EBEFC220939}
+		{DB251A19-95F3-4EBB-99A9-78F6A6C80BCC} = {73DC5B30-5EB1-4C9C-A912-6EBEFC220939}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48B3B46C-1D14-4173-BAF1-D07FB88CA2FA}

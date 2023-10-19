@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Sockets;
 using System.Net;
 using System.Threading.Tasks;
@@ -12,6 +12,7 @@ namespace TcpRouter.FakeDetectorConsole
   {
     static void Main(string[] args)
     {
+      Console.WriteLine("Hello! I am fake detector");
       try
       {
         int port = 12345;

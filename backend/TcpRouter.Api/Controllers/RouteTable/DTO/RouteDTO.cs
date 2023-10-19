@@ -1,4 +1,4 @@
-﻿namespace TcpRouter.Api.Controllers.RouteTable.DTO
+namespace TcpRouter.Api.Controllers.RouteTable.DTO
 {
   /// <summary>
   /// Data Transport Object для маршрута

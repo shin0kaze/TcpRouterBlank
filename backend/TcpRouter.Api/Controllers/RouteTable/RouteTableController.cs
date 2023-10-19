@@ -4,7 +4,7 @@ using TcpRouter.Api.Controllers.RouteTable.DTO;
 namespace TcpRouter.Api.Controllers.RouteTable
 {
   /// <summary>
-  /// Контроллер таблицы маршрутизации
+  /// РљРѕРЅС‚СЂРѕР»Р»РµСЂ С‚Р°Р±Р»РёС†С‹ РјР°СЂС€СЂСѓС‚РёР·Р°С†РёРё
   /// </summary>
   [ApiController]
   [Route("[controller]")]
@@ -16,11 +16,11 @@ namespace TcpRouter.Api.Controllers.RouteTable
     }
 
     /// <summary>
-    /// Получить список маршрутов
+    /// РџРѕР»СѓС‡РёС‚СЊ СЃРїРёСЃРѕРє РјР°СЂС€СЂСѓС‚РѕРІ
     /// </summary>
-    /// <param name="from">Индекс начала считывания</param>
-    /// <param name="count">Необходимое количество маршрутов</param>
-    /// <returns>Список маршрутов с кодом ответа</returns>
+    /// <param name="from">РРЅРґРµРєСЃ РЅР°С‡Р°Р»Р° СЃС‡РёС‚С‹РІР°РЅРёСЏ</param>
+    /// <param name="count">РќРµРѕР±С…РѕРґРёРјРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјР°СЂС€СЂСѓС‚РѕРІ</param>
+    /// <returns>РЎРїРёСЃРѕРє РјР°СЂС€СЂСѓС‚РѕРІ СЃ РєРѕРґРѕРј РѕС‚РІРµС‚Р°</returns>
     [HttpGet("{from}/{count}")]
     public ActionResult<IEnumerable<RouteWithStatusDTO>> Get(uint from, uint count)
     {
@@ -28,10 +28,10 @@ namespace TcpRouter.Api.Controllers.RouteTable
     }
 
     /// <summary>
-    /// Получить маршрут по серийному номеру устройства (ID-маршрута)
+    /// РџРѕР»СѓС‡РёС‚СЊ РјР°СЂС€СЂСѓС‚ РїРѕ СЃРµСЂРёР№РЅРѕРјСѓ РЅРѕРјРµСЂСѓ СѓСЃС‚СЂРѕР№СЃС‚РІР° (ID-РјР°СЂС€СЂСѓС‚Р°)
     /// </summary>
-    /// <param name="serialNumber">Серийный номер устройства (ID-маршрута)</param>
-    /// <returns>Маршрут с кодом ответа</returns>
+    /// <param name="serialNumber">РЎРµСЂРёР№РЅС‹Р№ РЅРѕРјРµСЂ СѓСЃС‚СЂРѕР№СЃС‚РІР° (ID-РјР°СЂС€СЂСѓС‚Р°)</param>
+    /// <returns>РњР°СЂС€СЂСѓС‚ СЃ РєРѕРґРѕРј РѕС‚РІРµС‚Р°</returns>
     [HttpGet("{serialNumber}")]
     public ActionResult<RouteWithStatusDTO> Get(string serialNumber)
     {
@@ -39,10 +39,10 @@ namespace TcpRouter.Api.Controllers.RouteTable
     }
 
     /// <summary>
-    /// Добавить новый маршрут
+    /// Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІС‹Р№ РјР°СЂС€СЂСѓС‚
     /// </summary>
-    /// <param name="route">Описание маршрута</param>
-    /// <returns>Код ответа от сервера</returns>
+    /// <param name="route">РћРїРёСЃР°РЅРёРµ РјР°СЂС€СЂСѓС‚Р°</param>
+    /// <returns>РљРѕРґ РѕС‚РІРµС‚Р° РѕС‚ СЃРµСЂРІРµСЂР°</returns>
     [HttpPost()]
     public ActionResult Post(RouteDTO route)
     {
@@ -50,10 +50,10 @@ namespace TcpRouter.Api.Controllers.RouteTable
     }
 
     /// <summary>
-    /// Обновить существующий маршрут
+    /// РћР±РЅРѕРІРёС‚СЊ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РёР№ РјР°СЂС€СЂСѓС‚
     /// </summary>
-    /// <param name="route">Описание маршрута</param>
-    /// <returns>Код ответа от сервера</returns>
+    /// <param name="route">РћРїРёСЃР°РЅРёРµ РјР°СЂС€СЂСѓС‚Р°</param>
+    /// <returns>РљРѕРґ РѕС‚РІРµС‚Р° РѕС‚ СЃРµСЂРІРµСЂР°</returns>
     [HttpPut()]
     public ActionResult Put(RouteDTO route)
     {
@@ -62,10 +62,10 @@ namespace TcpRouter.Api.Controllers.RouteTable
 
 
     /// <summary>
-    /// Удалить маршрут
+    /// РЈРґР°Р»РёС‚СЊ РјР°СЂС€СЂСѓС‚
     /// </summary>
-    /// <param name="serialNumber">Серийный номер устройства (ID-маршрута)</param>
-    /// <returns>Код ответа от сервера</returns>
+    /// <param name="serialNumber">РЎРµСЂРёР№РЅС‹Р№ РЅРѕРјРµСЂ СѓСЃС‚СЂРѕР№СЃС‚РІР° (ID-РјР°СЂС€СЂСѓС‚Р°)</param>
+    /// <returns>РљРѕРґ РѕС‚РІРµС‚Р° РѕС‚ СЃРµСЂРІРµСЂР°</returns>
     [HttpDelete()]
     public ActionResult Delete(string serialNumber)
     {

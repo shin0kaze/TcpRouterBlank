@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using TcpRouter.Abstractions;
 
 namespace TcpRotuer.Router

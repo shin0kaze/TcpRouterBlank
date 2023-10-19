@@ -30,14 +30,14 @@ namespace TcpRouter.FakeMeter
     {
       if (!IsSerialNumberValid(textBoxSerialNumber.Text))
       {
-        toolStripStatusLabel1.Text = "Невалидный серийный номер";
+        toolStripStatusLabel1.Text = "РќРµРІР°Р»РёРґРЅС‹Р№ СЃРµСЂРёР№РЅС‹Р№ РЅРѕРјРµСЂ";
         buttonConnect.Enabled = false;
         return;
       }
 
       if (!IsIpAndPortValid(textBoxIpAndPort.Text, out _, out _))
       {
-        toolStripStatusLabel1.Text = "Невалидный IP-адрес и/или TCP-порт";
+        toolStripStatusLabel1.Text = "РќРµРІР°Р»РёРґРЅС‹Р№ IP-Р°РґСЂРµСЃ Рё/РёР»Рё TCP-РїРѕСЂС‚";
         buttonConnect.Enabled = false;
         return;
       }
@@ -81,35 +81,35 @@ namespace TcpRouter.FakeMeter
         _socket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
         var endPount = new IPEndPoint(ip, port);
-        Log("Подключаюсь");
+        Log("РџРѕРґРєР»СЋС‡Р°СЋСЃСЊ");
         await _socket.ConnectAsync(endPount);
         OnConnected();
-        Log("Подключились");
+        Log("РџРѕРґРєР»СЋС‡РёР»РёСЃСЊ");
 
         var buffer = new byte[100];
         var count = await _socket.ReceiveAsync(buffer);
         var received = Encoding.UTF8.GetString(buffer.AsSpan().Slice(0, count));
-        Log($"Приняли: '{received}'");
+        Log($"РџСЂРёРЅСЏР»Рё: '{received}'");
         if (received != "PREVED")
         {
-          throw new Exception("На другом конце спросили не по протоколу");
+          throw new Exception("РќР° РґСЂСѓРіРѕРј РєРѕРЅС†Рµ СЃРїСЂРѕСЃРёР»Рё РЅРµ РїРѕ РїСЂРѕС‚РѕРєРѕР»Сѓ");
         }
-        Log("Идентификация...");
+        Log("РРґРµРЅС‚РёС„РёРєР°С†РёСЏ...");
 
         await _socket.SendAsync(Encoding.UTF8.GetBytes("MEDVED"));
 
         count = await _socket.ReceiveAsync(buffer);
         received = Encoding.UTF8.GetString(buffer.AsSpan().Slice(0, count));
-        Log($"Приняли: '{received}'");
+        Log($"РџСЂРёРЅСЏР»Рё: '{received}'");
         if (received != "GET SERIAL NUMBER")
         {
-          throw new Exception("На другом конце спросили не по протоколу");
+          throw new Exception("РќР° РґСЂСѓРіРѕРј РєРѕРЅС†Рµ СЃРїСЂРѕСЃРёР»Рё РЅРµ РїРѕ РїСЂРѕС‚РѕРєРѕР»Сѓ");
         }
-        Log("Запрос серийного номера...");
+        Log("Р—Р°РїСЂРѕСЃ СЃРµСЂРёР№РЅРѕРіРѕ РЅРѕРјРµСЂР°...");
 
         await _socket.SendAsync(Encoding.UTF8.GetBytes(textBoxSerialNumber.Text));
 
-        Log("Отправили серийный номер и перешли в режим ЭХО");
+        Log("РћС‚РїСЂР°РІРёР»Рё СЃРµСЂРёР№РЅС‹Р№ РЅРѕРјРµСЂ Рё РїРµСЂРµС€Р»Рё РІ СЂРµР¶РёРј Р­РҐРћ");
         while (true)
         {
           count = await _socket.ReceiveAsync(buffer);
@@ -118,7 +118,7 @@ namespace TcpRouter.FakeMeter
       }
       catch (Exception ex)
       {
-        Log("Ошибка: " + ex.Message);
+        Log("РћС€РёР±РєР°: " + ex.Message);
       }
       finally
       {

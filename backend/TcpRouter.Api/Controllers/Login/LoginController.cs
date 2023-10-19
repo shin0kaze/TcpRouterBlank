@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace TcpRouter.Api.Controllers.Login
 {
@@ -12,7 +12,7 @@ namespace TcpRouter.Api.Controllers.Login
   public class LoginController : ControllerBase
   {
     [HttpGet]
-    public ActionResult Get() 
+    public ActionResult Get()
     {
       //TODO: Сгенерировать QR-код с информацией о подключении клиентского приложения к серверу
       //и выдать результат.

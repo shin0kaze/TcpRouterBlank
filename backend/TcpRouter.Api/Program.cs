@@ -20,7 +20,7 @@ namespace TcpRouter.Api
       if (app.Environment.IsDevelopment())
       {
         app.UseSwagger();
-        app.UseSwaggerUI(c => 
+        app.UseSwaggerUI(c =>
         {
           c.SwaggerEndpoint("/swagger/v1/swagger.json", "TCP-Router 1.0 API");
           c.RoutePrefix = string.Empty;
